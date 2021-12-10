@@ -6,6 +6,19 @@ var regex = {
   username: /^[A-Za-z][A-Za-z\d]{5,}$/,
 };
 
+function clearForm() {
+  document.getElementById("firstname").value = "";
+  document.getElementById("lastname").value = "";
+  document.getElementById("password1").value = "";
+  document.getElementById("password2").value = "";
+  document.getElementById("username").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("age").value = "";
+  ["status1", "status2", "status3"].forEach(
+    (id) => (document.getElementById(id).checked = false)
+  );
+}
+
 function formValidation() {
   var firstName = document.getElementById("firstname").value;
   var lastName = document.getElementById("lastname").value;
