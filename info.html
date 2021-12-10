@@ -1,0 +1,100 @@
+<!DOCTYPE hitml>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" media="all" />
+  <script src="info.js"></script>
+
+  <title>Kaori Kojima</title>
+  <div class="logo">
+    <a href="#">
+      <p><img src="logo.png" alt="logo" width="150px" height="100px" /></p>
+    </a>
+    <p class="title">WEB 222 -FINAL-</p>
+  </div>
+</head>
+
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="honesty.html">Honesty</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="reflection.html">Reflection</a></li>
+    </ul>
+  </nav>
+
+  <div class='main'>
+    <div id="left-hand-side">
+      <div class="header">
+        <h2>Student Info</h2>
+      </div>
+
+      <form name="signup" id="form" method="post" action="https://httpbin.org/post" onsubmit='return formValidation()'>
+        <input type="hidden" name="lastName" id="lastName" value="Kojima" />
+        <input type="hidden" name="studentId" id="studentId" value="119221208" />
+        <div class="form-adj">
+          <label for="firstname">First Name</label><br />
+          <input id='firstname' type="text" /><br />
+        </div>
+        <div class="form-adj">
+          <label for="lastname">Last Name</label><br />
+          <input id='lastname' type="text" /><br />
+        </div>
+        <div class="form-adj">
+          <label for="password">Password</label><br />
+          <input id='password1' type="password" /><br />
+        </div>
+        <div class="form-adj">
+          <label for="password">Confirm Password</label><br />
+          <input id='password2' type="password" /><br />
+        </div>
+        <div class="form-adj">
+          <label for="usename">User Name</label><br />
+          <input id='username' type="text" />
+        </div>
+        <div class="radio-title">
+          <label for="education">Education Status</label>
+        </div>
+        <div class="radio-form">
+          <ul>
+            <li>
+              <input type="radio" name="status" class="status" id="status1" value="Graduated" />Graduated
+            </li>
+            <li>
+              <input type="radio" name="status" class="status" id="status2" value="Currentry Enrolled" />Currentry
+              enrolled
+            </li>
+            <li>
+              <input type="radio" name="status" class="status" id="status3" value="Did not graduate" />Did not graduate
+            </li>
+          </ul>
+        </div>
+        <div class="form-adj">
+          <label for="email">Email</label><br />
+          <input id='email' type="email" /><br />
+        </div>
+        <div class="form-adj">
+          <label for="age">Age</label><br />
+          <input id="age" type="number" min="18" max="60" />
+          <br />
+        </div>
+        <input type="submit"></button>
+        <button>Clear</button>
+      </form>
+    </div>
+
+    <div id="error">
+      <h1>Error Messages list</h1>
+      <div id="error-list"></div>
+    </div>
+
+  </div>
+  </div>
+  <div id="footer">
+    <a href="#">Git Hub LINK</a>
+  </div>
+</body>
+
+</html>

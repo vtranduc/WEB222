@@ -1,0 +1,137 @@
+/* honesty Page */
+.border {
+  border: ridge #ccc;
+  border-width: 6px;
+}
+.border-2 {
+  width: 980px;
+  margin: 10px;
+}
+
+.border-3 {
+  margin: 50px;
+}
+/* Main-Menu */
+.logo {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+}
+
+.title {
+  display: inline-block;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  font-weight: bold;
+  margin: 0 0 0 100px;
+  color: grey;
+  letter-spacing: 15px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  text-align: center;
+}
+nav ul {
+  margin: 10px;
+  padding: 10px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  width: 18%;
+  min-width: 90px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: yellow;
+}
+body {
+  width: 1000px;
+  margin: 0 auto;
+}
+.menu {
+  color: white;
+  background-color: #dc143c;
+}
+
+/* Info page */
+#error {
+  margin: auto;
+  margin-left: 100px;
+  background-color: pink;
+  border: 5px solid grey;
+  float: right;
+  padding: 100px;
+  width: 40%;
+}
+#error h1 {
+  font-size: 35px;
+  margin: 10px 0 0 0;
+}
+#error p {
+  margin: 20px;
+}
+
+.header {
+  margin: auto;
+  color: white;
+  background-color: #dc143c;
+  padding: 20px 0px 20px 0px;
+  background-size: 50px;
+}
+
+.header h2 {
+  margin: auto;
+  text-align: center;
+}
+
+form {
+  margin: 0 0 0 50px;
+}
+
+.form-adj {
+  padding: 20px;
+}
+.radio-title {
+  padding: 20px;
+}
+.radio-form ul {
+  list-style: none;
+}
+
+button {
+  margin: 20px;
+}
+
+#footer {
+  width: 980px;
+  margin: 10px;
+  background-color: #dc143c;
+  height: 30px;
+  text-align: center;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#left-hand-side {
+  border-radius: 30px;
+  border: 2px solid #dc143c;
+  width: 400px;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
